@@ -527,6 +527,90 @@ section.footer.section-padding {
     padding:7px 10px 7px 32px;
   }
 
+  .faq {
+    min-height: 70vh;
+    width: 100vw;
+    text-align: center;
+    padding: 0 2rem;
+    background: linear-gradient(30deg, #FBF1D5, #fff);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .faq .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  
+  .faq .row .accordion-container {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .faq .row .accordion {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  
+  .faq .row .accordion-container .accordion .accordion-header {
+    background-color: #002e5f;
+    margin: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    color: white;
+  }
+  
+  .faq .row .accordion-container .accordion .accordion-header:hover {
+    background-color:#FFBA00;
+  }
+  
+  .faq .row .accordion-container .accordion .accordion-header span {
+    display: inline-block;
+    text-align: center;
+    height: 3rem;
+    width: 5rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    background: #333;
+    color: #fff;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  
+  .faq .row .accordion-container .accordion .accordion-header h3 {
+    display: inline;
+    color: #333;
+    font-weight: 400;
+    padding-left: 0.5rem;
+    font-size: 15px;
+  }
+  
+  .faq .row .accordion-container .accordion .accordion-body {
+    display: block;
+    padding: 1rem;
+    color: #444;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-size: 1.3rem;
+    display: none;
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .faq {
+      min-height: 70vh;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    html {
+      font-size: 50%;
+    }
+}
   /* Service Page Styles  */
 
 /*   
@@ -724,7 +808,13 @@ button.project-button-2{
 
 /* Team Page Styles  */
 
-.team-page-description h2 {font-family: 'Roboto',sans-serif;font-size: 45px;font-weight: 500;color: #070A57;line-height: 32px;padding-bottom: 25px;}
+.team-page-description h2 {
+    font-family: 'Roboto',sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: #070A57;
+    line-height: 32px;
+    padding-bottom: 25px;}
 
 .team-page-description p {
     font-family: 'Roboto',sans-serif;
@@ -736,10 +826,20 @@ button.project-button-2{
 }
 .team-card {
     margin-bottom: 40px;
+    
 }
-.team-card h3 {font-family: 'Roboto',sans-serif;font-size: 26px;font-weight: 500;color: #070A57;padding: 5px;}
+.team-card h3 {
+    font-family: 'Roboto',sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #070A57;
+    padding: 5px;}
 
-.team-card p {font-family: 'Roboto',sans-serif;font-size: 14px;color: #64707D;}
+.team-card p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    
+    color: #FFBA00;}
 
 .team-card ul li {
     list-style: none;
@@ -764,3 +864,5 @@ span.counter-plus {
     font-size: 45px;
     color: #FFBA00;
 }
+
+/* Team Page Styles  */
